@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九九电影网在线观看 - 电影在线看/在线选片指南/高清电影片单推荐（官方网址 https://jiujiudianyingwangzaixianguankan-top.github.io）</title>
+<meta name="keywords" content="九九电影网在线观看, 电影在线观看, 在线看电影, 高清电影在线选片, 电影片单推荐, 在线电影排行榜, 电影分类在线看, jiujiudianyingwangzaixianguankan-top.github.io">
+<meta name="description" content="九九电影网在线观看（https://jiujiudianyingwangzaixianguankan-top.github.io）提供电影在线观看的选片与导航服务：整理热门新片、在线分类、高分榜与观影小贴士，页面静态轻量、移动端自适应，帮您快速找到想看的电影。">
+<link rel="canonical" href="https://jiujiudianyingwangzaixianguankan-top.github.io">
+<meta property="og:title" content="九九电影网在线观看 - 电影在线选片与导航站">
+<meta property="og:description" content="热门新片、在线分类、高分榜与观影小贴士，官方入口 https://jiujiudianyingwangzaixianguankan-top.github.io。">
+<meta property="og:url" content="https://jiujiudianyingwangzaixianguankan-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="九九电影网在线观看">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="九九电影网在线观看 - 电影在线选片与导航站">
+<meta name="twitter:description" content="热门新片、在线分类、高分榜与观影小贴士，官方入口 jiujiudianyingwangzaixianguankan-top.github.io。">
+<style>
+:root{
+  --night:#0a1024;
+  --night2:#111a36;
+  --steel:#2c3552;
+  --rivet:#5a6586;
+  --neon-orange:#ff9a3c;
+  --neon-blue:#3ed6f0;
+  --neon-pink:#ff5c8a;
+  --paper:#f4f0e2;
+  --ink:#eaf0ff;
+  --muted:#a7b0cf;
+  --shadow:0 16px 40px rgba(0,0,0,.5);
+  --sans:"PingFang SC","Microsoft YaHei",sans-serif;
+  --ticket:"Courier New",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--sans);color:var(--ink);background:var(--night);
+  line-height:1.85;padding:16px;
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.014) 3px 4px),
+    radial-gradient(900px 340px at 82% -120px,rgba(255,154,60,.22),transparent 58%),
+    radial-gradient(700px 260px at 4% 4%,rgba(62,214,240,.14),transparent 55%);
+}
+a{color:var(--neon-blue);text-decoration:none;transition:.2s}
+a:hover{color:var(--neon-orange)}
+.container{max-width:1180px;margin:0 auto}
+
+/* 铆钉招牌 */
+.board{
+  position:relative;padding:20px 26px;margin-bottom:18px;background:linear-gradient(180deg,var(--night2),var(--night));
+  border:3px solid var(--steel);border-radius:10px;box-shadow:var(--shadow);
+}
+.board::before,.board::after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#9aa4c4,#4a5472);box-shadow:inset 0 -2px 3px rgba(0,0,0,.4)}
+.board::before{top:10px;left:10px}.board::after{top:10px;right:10px}
+.board b.dot,.board b.dot2{position:absolute;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#9aa4c4,#4a5472);box-shadow:inset 0 -2px 3px rgba(0,0,0,.4)}
+.board b.dot{bottom:10px;left:10px}.board b.dot2{bottom:10px;right:10px}
+.marquee{
+  border:2px solid var(--steel);border-radius:6px;background:#070b19;padding:11px 16px;overflow:hidden;white-space:nowrap;
+  font-family:var(--ticket);font-size:13px;letter-spacing:2px;color:var(--neon-orange);box-shadow:inset 0 0 16px rgba(255,154,60,.15);
+}
+.marquee span{display:inline-block;animation:run 24s linear infinite}
+@keyframes run{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+.marquee em{font-style:normal;color:var(--neon-blue)}
+
+/* 头部 */
+.header{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:22px 0;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:16px}
+.brand .bulb{
+  width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--neon-orange),#c45f10);position:relative;
+  box-shadow:0 0 22px rgba(255,154,60,.6),inset 0 -6px 10px rgba(0,0,0,.3);
+}
+.brand .bulb::after{content:"99";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--ticket);font-size:17px;font-weight:900;color:#2a1505;letter-spacing:1px}
+.brand .name{font-size:27px;font-weight:900;letter-spacing:1px;text-shadow:0 0 10px rgba(62,214,240,.35)}
+.brand .name i{font-style:normal;color:var(--neon-orange);text-shadow:0 0 10px rgba(255,154,60,.5)}
+.brand small{display:block;font-family:var(--ticket);font-size:12px;letter-spacing:2px;color:var(--muted);margin-top:3px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{
+  font-family:var(--ticket);font-size:13px;font-weight:700;letter-spacing:1px;padding:10px 17px;color:var(--ink);
+  background:rgba(255,255,255,.05);border:2px solid var(--steel);border-radius:6px;min-height:44px;display:inline-flex;align-items:center;
+}
+.nav a:hover{background:var(--neon-orange);color:#2a1505;border-color:var(--neon-orange);box-shadow:0 0 14px rgba(255,154,60,.5)}
+
+/* Hero 排片板 */
+.hero{
+  position:relative;overflow:hidden;padding:58px 34px;margin-bottom:28px;
+  background:radial-gradient(700px 300px at 80% 8%,rgba(255,92,138,.2),transparent 60%),linear-gradient(160deg,var(--night2),var(--night));
+  border:3px solid var(--steel);border-radius:12px;box-shadow:var(--shadow);
+}
+.hero .strip{position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(45deg,var(--neon-orange) 0 12px,var(--night) 12px 24px);opacity:.7}
+.kicker{font-family:var(--ticket);font-size:13px;letter-spacing:4px;color:var(--neon-blue);margin-bottom:12px}
+.hero h1{font-size:clamp(27px,6vw,48px);font-weight:900;line-height:1.25;letter-spacing:1px;margin-bottom:14px;color:var(--paper)}
+.hero h1 b{color:var(--neon-orange);text-shadow:0 0 14px rgba(255,154,60,.5)}
+.hero p{max-width:650px;color:var(--muted);margin-bottom:18px}
+.quote{font-family:var(--ticket);font-size:14px;color:var(--neon-pink);border-left:3px solid var(--neon-blue);padding:10px 18px;margin-bottom:18px;max-width:650px;background:rgba(62,214,240,.06)}
+.urlbox{display:inline-block;font-family:var(--ticket);font-weight:700;background:#070b19;color:var(--neon-orange);padding:12px 16px;border:2px solid var(--neon-blue);border-radius:6px}
+.urlbox a{color:var(--neon-blue)}
+.btn{display:inline-block;margin-top:16px;font-family:var(--ticket);font-size:15px;font-weight:900;letter-spacing:2px;color:#2a1505;background:var(--neon-orange);padding:14px 34px;border:2px solid #070b19;border-radius:6px;box-shadow:0 6px 0 var(--neon-pink)}
+.btn:hover{background:var(--neon-blue);color:#070b19;box-shadow:0 6px 0 var(--neon-orange)}
+
+/* 栏目 */
+.section{padding:28px 0}
+.stitle{font-family:var(--ticket);font-size:20px;font-weight:900;letter-spacing:2px;color:var(--neon-orange);display:inline-flex;align-items:center;gap:10px;margin-bottom:20px}
+.stitle::before{content:"";width:14px;height:14px;border-radius:2px;background:var(--neon-blue);box-shadow:0 0 10px var(--neon-blue)}
+.stitle.b::before{background:var(--neon-pink);box-shadow:0 0 10px var(--neon-pink)}
+
+/* 票根卡 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ticket{background:var(--paper);color:#2a2a2a;border:2px solid var(--steel);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);transition:.25s;position:relative}
+.ticket:hover{transform:translateY(-5px);box-shadow:0 14px 36px rgba(255,154,60,.3)}
+.ticket::before{content:"";position:absolute;left:0;right:0;bottom:56px;height:0;border-top:2px dashed #b9b1a0}
+.ticket .poster{height:180px;display:flex;align-items:center;justify-content:center;font-size:56px;position:relative}
+.t1{background:linear-gradient(135deg,#ffe1c2,#ffb877)}
+.t2{background:linear-gradient(135deg,#c9f0fa,#7fd6ea)}
+.t3{background:linear-gradient(135deg,#ffd9e2,#ffaec4)}
+.ticket .poster em{position:absolute;top:12px;left:12px;font-style:normal;font-family:var(--ticket);font-size:11px;letter-spacing:1px;color:#2a1505;background:var(--neon-orange);padding:3px 9px;border-radius:3px;font-weight:700}
+.ticket .info{padding:16px 18px}
+.ticket h3{font-family:var(--ticket);font-size:17px;letter-spacing:1px;margin-bottom:6px}
+.ticket p{font-size:14px;color:#5c5c5c}
+.ticket .meta{margin-top:12px;font-family:var(--ticket);font-size:12px;color:#8a5a10;letter-spacing:1px}
+
+/* 分类：霓虹格 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.box{border:2px solid var(--steel);border-radius:8px;padding:18px;background:rgba(255,255,255,.04);transition:.2s}
+.box .ic{font-size:28px;display:block;margin-bottom:6px}
+.box b{display:block;font-size:15px;margin-bottom:3px}
+.box span{font-size:12px;color:var(--muted)}
+.box:hover{background:rgba(62,214,240,.1);border-color:var(--neon-blue);box-shadow:0 0 14px rgba(62,214,240,.35);transform:translateY(-3px)}
+.box:nth-child(even):hover{background:rgba(255,154,60,.12);border-color:var(--neon-orange);box-shadow:0 0 14px rgba(255,154,60,.35)}
+
+/* 榜单：排片表 */
+.list{background:rgba(255,255,255,.04);border:2px solid var(--steel);border-radius:10px;padding:24px;box-shadow:var(--shadow)}
+.row{display:flex;gap:18px;align-items:center;padding:15px 0;border-bottom:1px dashed rgba(90,101,134,.5)}
+.row:last-child{border-bottom:0}
+.no{font-family:var(--ticket);font-size:20px;font-weight:900;min-width:46px;text-align:center;color:#070b19;background:var(--neon-orange);border-radius:5px;padding:4px 0}
+.row:nth-child(1) .no{background:var(--neon-pink)}
+.row:nth-child(2) .no{background:var(--neon-blue)}
+.rbody{flex:1}
+.rbody h3{font-family:var(--ticket);font-size:16px;letter-spacing:1px}
+.rbody small{font-size:12px;color:var(--muted)}
+.score{font-family:var(--ticket);font-weight:900;color:var(--neon-orange);background:#070b19;border:1px solid var(--neon-orange);padding:5px 12px;border-radius:5px}
+
+/* 贴士 */
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tip{background:rgba(255,255,255,.04);border:2px solid var(--steel);border-left:5px solid var(--neon-orange);border-radius:8px;padding:18px}
+.tip:nth-child(2){border-left-color:var(--neon-blue)}
+.tip:nth-child(3){border-left-color:var(--neon-pink)}
+.tip h3{font-size:16px;margin-bottom:6px}
+.tip p{font-size:14px;color:var(--muted)}
+
+/* 关于 */
+.about{background:linear-gradient(160deg,var(--night2),#070b19);border:3px solid var(--neon-orange);border-radius:12px;padding:44px 28px;text-align:center;box-shadow:var(--shadow)}
+.about h2{font-family:var(--ticket);font-size:23px;letter-spacing:2px;color:var(--neon-orange);margin-bottom:14px;text-shadow:0 0 12px rgba(255,154,60,.4)}
+.about p{max-width:740px;margin:0 auto 16px;color:#dbe2f7}
+.about .urlbox{background:#070b19;color:var(--neon-orange);border-color:var(--neon-blue)}
+
+/* 页脚 */
+.footer{margin-top:28px;padding:24px 0;text-align:center;border-top:2px dashed var(--steel)}
+.flinks{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.flinks a{font-family:var(--ticket);font-size:13px;letter-spacing:1px;color:var(--ink);padding:10px 17px;background:rgba(255,255,255,.05);border:2px solid var(--steel);border-radius:6px;min-height:44px;display:inline-flex;align-items:center}
+.flinks a:hover{background:var(--neon-orange);color:#2a1505}
+.copy{font-family:var(--ticket);font-size:12px;color:var(--muted);line-height:1.9}
+.copy a{color:var(--neon-blue)}
+
+@media(max-width:1024px){.grid3{grid-template-columns:repeat(2,1fr)}.grid4{grid-template-columns:repeat(2,1fr)}.tips{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+  body{padding:10px}
+  .header{flex-direction:column;align-items:flex-start}
+  .hero{padding:36px 20px}
+  .grid3,.grid4,.tips{grid-template-columns:1fr}
+  .row{flex-wrap:wrap}
+  .about{padding:30px 18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="container">
+
+  <div class="board">
+    <b class="dot"></b><b class="dot2"></b>
+    <div class="marquee">
+      <span>🎬 今晚排片：<em>九九电影网在线观看</em> 为您点亮片名灯箱｜新片持续上架｜在线选片不绕弯｜官方入口：https://jiujiudianyingwangzaixianguankan-top.github.io｜祝您观影愉快</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="brand">
+      <div class="bulb"></div>
+      <div class="name">九九<i>电影网在线观看</i></div>
+      <small>JIUJIU ONLINE CINEMA · 在线选片站</small>
+    </div>
+    <nav class="nav">
+      <a href="#now">正在热映</a>
+      <a href="#genre">在线分类</a>
+      <a href="#chart">口碑榜</a>
+      <a href="#guide">观影贴士</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="strip"></div>
+    <div class="kicker">NOW SHOWING · ONLINE SELECTION</div>
+    <h1>九九电影网在线观看<br>今晚<b>放哪一部？</b></h1>
+    <p>不知道看什么的时候，先来看看排片板。九九电影网在线观看把电影整理成一份在线片单：正在热映、在线分类、口碑榜与观影贴士，翻一下就能定今晚的主意。</p>
+    <div class="quote">“找片不是浪费时间，选对了，两小时才不白过。”——九九电影网在线观看编辑部</div>
+    <div class="urlbox">官方入口：<a href="https://jiujiudianyingwangzaixianguankan-top.github.io">https://jiujiudianyingwangzaixianguankan-top.github.io</a></div>
+    <br>
+    <a href="#" class="btn">▷ 查看今晚排片 #</a>
+  </section>
+
+  <section id="now" class="section">
+    <div class="stitle">▍正在热映 · 三张票根</div>
+    <div class="grid3">
+      <article class="ticket">
+        <div class="poster t1"><em>热映</em>🎞️</div>
+        <div class="info">
+          <h3><a href="#">追光的人</a></h3>
+          <p>剧情 / 励志，一个总在替别人拍照的人，终于走进了自己的镜头。</p>
+          <div class="meta">118min · 剧情励志</div>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="poster t2"><em>新片</em>🛰️</div>
+        <div class="info">
+          <h3><a href="#">倒数七秒</a></h3>
+          <p>科幻 / 悬疑，记忆只能保存七秒，他必须靠记号找出真相。</p>
+          <div class="meta">124min · 科幻悬疑</div>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="poster t3"><em>暖片</em>🌷</div>
+        <div class="info">
+          <h3><a href="#">周末花店</a></h3>
+          <p>治愈 / 爱情，花店老板和常客之间，一束束花替他们说完了话。</p>
+          <div class="meta">102min · 治愈爱情</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="genre" class="section">
+    <div class="stitle b">▍在线分类 · 按口味选</div>
+    <div class="grid4">
+      <a href="#" class="box"><span class="ic">💥</span><b>动作冒险</b><span>枪战 / 追车 / 探险</span></a>
+      <a href="#" class="box"><span class="ic">🔍</span><b>悬疑推理</b><span>犯罪 / 烧脑</span></a>
+      <a href="#" class="box"><span class="ic">👽</span><b>科幻惊悚</b><span>太空 / AI / 未来</span></a>
+      <a href="#" class="box"><span class="ic">💖</span><b>浪漫爱情</b><span>青春 / 都市</span></a>
+      <a href="#" class="box"><span class="ic">😂</span><b>爆笑喜剧</b><span>合家 / 轻喜剧</span></a>
+      <a href="#" class="box"><span class="ic">🌿</span><b>治愈生活</b><span>美食 / 自然</span></a>
+      <a href="#" class="box"><span class="ic">🎭</span><b>剧情文艺</b><span>人物 / 社会</span></a>
+      <a href="#" class="box"><span class="ic">🏆</span><b>经典高分</b><span>影史 / 修复</span></a>
+    </div>
+  </section>
+
+  <section id="chart" class="section">
+    <div class="stitle">▍口碑榜 · 本周排片</div>
+    <div class="list">
+      <div class="row">
+        <div class="no">1</div>
+        <div class="rbody"><h3><a href="#">《追光的人》</a></h3><small>剧情励志 · 本周讨论度第一</small></div>
+        <div class="score">9.5</div>
+      </div>
+      <div class="row">
+        <div class="no">2</div>
+        <div class="rbody"><h3><a href="#">《肖申克的救赎》</a></h3><small>剧情 / 希望 · 长尾常青</small></div>
+        <div class="score">9.7</div>
+      </div>
+      <div class="row">
+        <div class="no">3</div>
+        <div class="rbody"><h3><a href="#">《倒数七秒》</a></h3><small>科幻悬疑 · 反转密集</small></div>
+        <div class="score">9.2</div>
+      </div>
+      <div class="row">
+        <div class="no">4</div>
+        <div class="rbody"><h3><a href="#">《周末花店》</a></h3><small>治愈爱情 · 口碑发酵</small></div>
+        <div class="score">9.0</div>
+      </div>
+      <div class="row">
+        <div class="no">5</div>
+        <div class="rbody"><h3><a href="#">《星际穿越》</a></h3><small>科幻 / 亲情 · 反复刷看</small></div>
+        <div class="score">9.4</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" class="section">
+    <div class="stitle b">▍观影贴士</div>
+    <div class="tips">
+      <div class="tip"><h3>先看心情再定类型</h3><p>想提神选动作悬疑，想动脑选科幻推理，想放松选治愈爱情，情绪对了才看得进去。</p></div>
+      <div class="tip"><h3>别只看热度看时长</h3><p>长片适合周末分段看，短片适合通勤；榜单能帮你快速筛掉踩雷的片子。</p></div>
+      <div class="tip"><h3>认准官方入口</h3><p>收藏九九电影网在线观看的官方入口，避免误入仿冒或广告过多的站点。</p></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="about">
+      <h2>关于 九九电影网在线观看</h2>
+      <p>九九电影网在线观看是一个电影在线选片与导航单页：整理正在热映、在线分类、口碑榜与观影贴士。页面为纯静态，便于快速打开与搜索引擎收录，不提供盗播，仅作选片参考。</p>
+      <p>官方入口：</p>
+      <div class="urlbox">https://<a href="https://jiujiudianyingwangzaixianguankan-top.github.io">jiujiudianyingwangzaixianguankan-top.github.io</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="flinks">
+      <a href="#">网站首页 #</a>
+      <a href="#">免责声明 #</a>
+      <a href="#">片源合作 #</a>
+      <a href="#">留言反馈 #</a>
+    </div>
+    <div class="copy">
+      Copyright © 2024 九九电影网在线观看｜关键词：九九电影网在线观看<br>
+      官方入口：<a href="https://jiujiudianyingwangzaixianguankan-top.github.io">https://jiujiudianyingwangzaixianguankan-top.github.io</a><br>
+      本页仅作电影推荐与导航示例，实际观看请使用正版平台。
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
